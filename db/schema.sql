@@ -3,9 +3,8 @@ CREATE DATABASE burgers_db;
 USE burgers_db;
 
 
-DROP TABLE IF EXISTS burger;
 
-CREATE TABLE food
+CREATE TABLE burger
  (
  	id int NOT NULL AUTO_INCREMENT,
     burger_name VARCHAR (150) NOT NULL,
