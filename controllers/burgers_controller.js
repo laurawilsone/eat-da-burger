@@ -17,7 +17,7 @@ router.get("/", function(req, res) {
 
 //post
 
-router.post("/burgers", function(req, res) {
+router.post("/burger", function(req, res) {
     burger.insertOne([
         "burger_name", "devoured"
     ], [
@@ -29,13 +29,13 @@ router.post("/burgers", function(req, res) {
 
 
 // put
-router.put("/burgers/:id", function(req, res){
+router.put("/burger/:id", function(req, res){
     var condition = "id = " + req.params.id;
 
    // console.log("condition", condition);
 
     burger.updateOne({
-        devoured: rew.body.devoured
+        devoured: true
     }, condition, function(data) {
         res.redirect("/");
     });
