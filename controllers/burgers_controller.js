@@ -17,7 +17,7 @@ router.get("/", function(req, res) {
 
 //post
 
-router.post("/burger", function(req, res) {
+router.post("/burgers", function(req, res) {
     burger.insertOne([
         "burger_name", "devoured"
     ], [
@@ -29,7 +29,7 @@ router.post("/burger", function(req, res) {
 
 
 // put
-router.put("/burger/:id", function(req, res){
+router.put("/burgers/updateOne/:id", function(req, res){
     var condition = "id = " + req.params.id;
 
    // console.log("condition", condition);
@@ -40,15 +40,6 @@ router.put("/burger/:id", function(req, res){
         res.redirect("/");
     });
 });
-
-// delete
-// router.delete("/burgers/:id", function(req, res) {
-//     var condition = "id = " + req.params.id;
-
-//     burger.delete(condition, function() {
-//         res.redirect("/");
-//     });
-// });
 
 
 module.exports = router;

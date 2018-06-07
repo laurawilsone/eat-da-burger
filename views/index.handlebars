@@ -1,6 +1,6 @@
 <div class="jumbotron">
     <h1 class="display-4">Eat-Da-Burger!</h1>
-    <p class="lead">Where Burgers are Devoured!</p>
+    <p class="lead">Where Burgers are not Eaten but Devoured!</p>
   <hr class="my-4">
 </div>
 
@@ -17,7 +17,7 @@
 			      	{{this.id}}
 			        {{this.burger_name}}
 
-			        <form action="/{{this.id}}?_method=PUT" method="POST">
+			        <form action="burgers/updateOne/{{this.id}}?_method=PUT" method="POST">
 			          <input type="hidden" name="devoured" value="true">
 			          <button class="btn-primary" type="submit">Devour It!</button>
 			        </form>
@@ -51,12 +51,12 @@
 	<div class="row">
 	    <div class="center col-sm-12">
 
-			<h2>Add da Burger!</h2>
+			<h2>Add Da Burger!</h2>
 
 			<form class="create-update-form" action="/burgers" method="POST">
 
 			  <div class="form-group">
-			    <p>Enter a burger you want to order and click the Submit.</p>
+			    <p>Enter a burger you want to order and click Submit.</p>
 			    <input type="text" id="ca" name="burger_name">
 			  </div>
 			  
