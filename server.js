@@ -11,7 +11,7 @@ app.use(express.static(process.cwd() + "/public"));
 app.use(bodyParser.urlencoded({ extended: false}));
 
 //method override
-app.use(methodOverride("_methos"));
+app.use(methodOverride("_method"));
 
 var exph = require("express-handlebars");
 
