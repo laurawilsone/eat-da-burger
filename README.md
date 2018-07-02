@@ -7,7 +7,7 @@ Whenever a user submits a burger's name, your app will display the burger on the
 Each burger in the waiting area also has a Devour it! button. When the user clicks it, the burger will move to the right side of the page.
 
 # Demo 
-To view demo click here
+To view demo click [here](https://pacific-earth-49123.herokuapp.com/)
 
 # Installation
 To run the application locally, first clone this repository with the following command.
